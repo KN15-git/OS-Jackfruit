@@ -179,6 +179,8 @@ sudo dmesg | tail
 
 Screenshots are stored in the `screenshots/` directory.
 
+---
+
 ### 1. Multi-container supervision
 
 ![img](screenshots/1_multicontainer.png)
@@ -219,19 +221,27 @@ Screenshots are stored in the `screenshots/` directory.
 ![img](screenshots/8_hard_limit.png)
 *Kernel kills container after exceeding hard limit*
 
----
-
-### 7. Scheduling experiment
-
-![img](screenshots/9_scheduler_priority.png)
-*CPU usage difference due to priority*
 
 ---
 
-### 8. Clean teardown
+### 7. Scheduling experiment — Priority container
+
+![img](screenshots/10_scheduler_low_priority.png)
+*Container with lower priority (higher nice value) receiving less CPU time*
+
+---
+
+### 8. Scheduling experiment — CPU vs IO
+
+![img](screenshots/11_scheduler_cpu_io.png)
+*CPU-bound process consumes high CPU while I/O-bound process remains responsive*
+
+---
+
+### 9. Clean teardown
 
 ![img](screenshots/14_kernel_cleanup.png)
-*No zombies, no leftover processes, module unloaded*
+*No zombie processes, no leftover processes, and kernel module unloaded successfully*
 
 ---
 
