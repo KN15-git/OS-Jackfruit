@@ -242,6 +242,7 @@ Screenshots are stored in the `screenshots/` directory.
 
 ![img](screenshots/14_kernel_cleanup.png)
 ![img](screenshots/15_kernel_cleanup.png)
+![img](screenshots/16_kernel_cleanup.png)
 *No zombie processes, no leftover processes, and kernel module unloaded successfully*
 
 ---
